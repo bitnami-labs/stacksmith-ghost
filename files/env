@@ -1,0 +1,7 @@
+#!/bin/bash
+
+readonly APP_DIR="/var/www/ghost"
+readonly NON_ROOT_USER="bitnami"
+readonly NON_ROOT_HOME="/home/bitnami"
+readonly CONF_FILE="${APP_DIR}/config.production.json"
+
