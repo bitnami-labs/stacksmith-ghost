@@ -8,14 +8,17 @@ We chose [Ghost](https://ghost.org/):
 
 ## Package and deploy with Stacksmith
 
-1. Go to [stacksmith.bitnami.com](https://stacksmith.bitnami.com)
-2. Create a new application and select the _Generic application with DB (MySQL)_ stack template.
-3. Select the targets you are interested on (AWS,Kubernetes,...)
+1. Go to [stacksmith.bitnami.com](https://stacksmith.bitnami.com). Select your project or create a new one.
+2. Click "Package an application". Select the _Generic application with DB (MySQL)_ stack template.
+3. Select the targets you are interested on (AWS,Kubernetes, etc.).
 4. We created a [_env_](files/env) to keep common configuration along our scripts. Upload it from the [_files_](files/) folder as an application file.
 5. Select `Git repository` for the application scripts and paste the URL of this repo. Use `master` as the `Repository Reference`.
 6. Click the <kbd>Create</kbd> button.
-7. Launch it in [AWS](https://stacksmith.bitnami.com/support/quickstart-aws) or download the helm chart to run it in [Kubernetes](https://stacksmith.bitnami.com/support/quickstart-k8s)
-8. Access your application: http://IP:8080
+7. Launch it in [AWS](https://stacksmith.bitnami.com/support/quickstart-aws) or download the Helm chart to run it in [Kubernetes](https://stacksmith.bitnami.com/support/quickstart-k8s).
+
+> NOTE: If you are launching the Ghost stack on AWS, you must set the "Network Configuration -> Application port" value to 8080.
+
+8. Access your application: http://IP_address:8080
 
 Stacksmith will compare the latest commit for a reference (e.g. new commits made to a branch) against the last commit used during packaging. If there are any new commits available, these will be available to view within the Repository Details pane in the application history. If you choose to repackage your application, these newer commits will be incorporated and used during the packaging.
 
