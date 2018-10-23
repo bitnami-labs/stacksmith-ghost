@@ -1,3 +1,5 @@
+[![View in Stacksmith](https://img.shields.io/badge/view_in-stacksmith-00437B.svg)](https://stacksmith.bitnami.com/p/bitnami-public/apps/5682f4e0-b4df-0136-eadb-3274f7efdee3)
+
 # Generic application with DB (MySQL): Ghost
 
 This is an example to show how to deploy a web application using the `Generic application with DB (MySQL)` stack template in [Bitnami Stacksmith](stacksmith.bitnami.com).
